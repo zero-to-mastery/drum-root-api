@@ -2,8 +2,10 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
-const signin = require("./controllers/signin");
-const signout = require("./controllers/signout");
+const { handleSignin } = require("./controllers/signin");
+const { handleSignout } = require("./controllers/signout");
+const { requireAuth } = require("./controllers/authorization");
+const { getLayout } = require("./controllers/drumLayout");
 
 const app = express();
 
@@ -14,5 +16,10 @@ app.get("/", (req, res) => {
   res.send("It's Working!");
 });
 
-app.post("/signin", signin.handleSignin);
-app.post("/signout", signout.handleSignout);
+app.post("/signin", handleSignin);
+app.post("/signout", handleSignout);
+app.get("/drumlayout", requireAuth, getLayout);
+
+app.listen(3000, () => {
+  console.log("app is running on port 3000");
+});
