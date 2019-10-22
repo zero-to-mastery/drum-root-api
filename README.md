@@ -30,7 +30,7 @@ An Express REST API service for Creating and Sharing Drum Loops. See [Drum Root]
 
 ___
 
-## Running locally
+## Running Locally
 
 To get started, just clone or fork the repository and run `npm install && npm run start`:
 
