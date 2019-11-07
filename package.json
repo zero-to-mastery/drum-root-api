@@ -7,12 +7,11 @@
     "start": "nodemon server.js"
   },
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "cors": "^2.8.4",
-    "express": "^4.16.2"
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^1.12.7"
+    "nodemon": "^1.19.4"
   },
   "keywords": [],
   "author": "",

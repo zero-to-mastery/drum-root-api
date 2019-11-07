@@ -1,25 +1,29 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const cors = require("cors");
+const express = require('express');
+const cors = require('cors');
 
-const { handleSignin } = require("./controllers/signin");
-const { handleSignout } = require("./controllers/signout");
-const { requireAuth } = require("./controllers/authorization");
-const { getLayout } = require("./controllers/drumLayout");
+const { handleSignin } = require('./controllers/signin');
+const { handleSignout } = require('./controllers/signout');
+const { requireAuth } = require('./controllers/authorization');
+const { getLayout } = require('./controllers/drumLayout');
 
 const app = express();
 
+// Enable CORS
 app.use(cors());
-app.use(bodyParser.json());
 
-app.get("/", (req, res) => {
+// Body parser
+app.use(express.json());
+
+app.get('/', (req, res) => {
   res.send("It's Working!");
 });
 
-app.post("/signin", handleSignin);
-app.post("/signout", handleSignout);
-app.get("/drumlayout", requireAuth, getLayout);
+app.post('/signin', handleSignin);
+app.post('/signout', handleSignout);
+app.get('/drumlayout', requireAuth, getLayout);
 
-app.listen(3000, () => {
-  console.log("app is running on port 3000");
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
