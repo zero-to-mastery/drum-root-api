@@ -32,8 +32,7 @@ ___
 
 ## Running Locally
 
-To get started, just clone or fork the repository and run `npm install && npm run start`:
+To get started, fork the repository and run the following commands:
 
-    git clone https://github.com/rgavinc/drum-root-api.git
     npm install
     npm run start
