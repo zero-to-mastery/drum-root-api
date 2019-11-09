@@ -11,8 +11,6 @@ const getLayout = (req, res) => {
       beats: [true, false, false, false]
     },
     { name: "snare", icon: "🥁", beats: [false, false, true, false] }
-
-    
   ]);
 };
 
