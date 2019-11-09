@@ -11,6 +11,19 @@
     "cors": "^2.8.4",
     "express": "^4.16.2"
   },
+  "lint-staged": {
+    "*.js": [ 
+      "eslint --fix", 
+      "prettier --write", 
+      "git add"
+    ], 
+    "*.{json,md}": ["prettier --write", "git add"]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "devDependencies": {
     "eslint": "^6.6.0",
     "husky": "^3.0.9",
