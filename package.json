@@ -13,7 +13,11 @@
   },
   "devDependencies": {
     "eslint": "^6.6.0",
-    "nodemon": "^1.12.7"
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "nodemon": "^1.12.7",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.19.1"
   },
   "keywords": [],
   "author": "",
