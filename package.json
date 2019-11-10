@@ -11,8 +11,28 @@
     "cors": "^2.8.4",
     "express": "^4.16.2"
   },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "devDependencies": {
-    "nodemon": "^1.12.7"
+    "eslint": "^6.6.0",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "nodemon": "^1.12.7",
+    "prettier": "^1.19.1"
   },
   "keywords": [],
   "author": "",
