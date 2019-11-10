@@ -36,3 +36,10 @@ To get started, fork the repository and run the following commands:
 
     npm install
     npm run start
+## Running using Docker (Back End)
+
+To get started clone the drum-root-api and run the following commands
+
+    docker build -t drum-root-api . (NOTE .(dot) at last is important)
+    docker run -it -p 3000:3000 drum-root-api
+    

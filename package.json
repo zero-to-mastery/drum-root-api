@@ -9,7 +9,7 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
-    "express": "^4.16.2"
+    "express": "^4.17.1"
   },
   "lint-staged": {
     "*.js": [
@@ -28,10 +28,10 @@
     }
   },
   "devDependencies": {
+    "nodemon": "^1.19.4",
     "eslint": "^6.6.0",
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
-    "nodemon": "^1.12.7",
     "prettier": "^1.19.1"
   },
   "keywords": [],
