@@ -1,7 +1,7 @@
 {
-  "name": "drum-root-api",
+  "name": "rest-api-docke",
   "version": "1.0.0",
-  "description": "",
+  "description": "An Express REST API service for Creating and Sharing Drum Loops. See [Drum Root](https://github.com/rgavinc/drum-root) for Front End Service.",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
@@ -9,10 +9,10 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
-    "express": "^4.16.2"
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^1.12.7"
+    "nodemon": "^1.19.4"
   },
   "keywords": [],
   "author": "",

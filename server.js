@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 
 app.post("/signin", handleSignin);
 app.post("/signout", handleSignout);
-app.get("/drumlayout", requireAuth, getLayout);
+app.get("/drumlayout",requireAuth, getLayout);
 
 app.listen(3000, () => {
   console.log("app is running on port 3000");
