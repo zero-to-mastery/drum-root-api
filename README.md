@@ -50,6 +50,7 @@ To get started clone the drum-root-api and run the following commands
     sudo docker-compose up --build (Gets running on port 3000)
 
 To access the PSQL shell through local
+
     docker exec -it 05b3a3471f6f bash
     $ su postgres
     root@------:/# psql
