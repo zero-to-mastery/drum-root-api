@@ -30,7 +30,7 @@ An Express REST API service for Creating and Sharing Drum Loops. See [Drum Root]
 - Project Lead - [rgavinc](https://github.com/rgavinc)
 - Front End Lead - needed
 - Back End Lead - [yashShelatkar](https://github.com/yashShelatkar)
-- Database Lead - [yashShelatkar](https://github.com/yashShelatkar)
+- Database Lead - [Aneesh](https://github.com/aneesh4995)
 - QA Lead - [rvvergara](https://github.com/rvvergara)
 - Designer/ Styling Lead - needed
 
