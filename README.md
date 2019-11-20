@@ -47,5 +47,16 @@ To get started, fork the repository and run the following commands:
 
 To get started clone the drum-root-api and run the following commands
 
-    docker build -t drum-root-api . (NOTE .(dot) at last is important)
-    docker run -it -p 3000:3000 drum-root-api
+    sudo docker-compose up --build (Gets running on port 3000)
+
+To access the PSQL shell through local (goto a new terminal)
+
+    docker exec -it drum-root-api_postgres_1 bash
+    root@------:/# su postgres
+    $ psql
+    
+
+    
+
+
+    
