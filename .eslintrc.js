@@ -1,6 +1,6 @@
 module.exports = {
   env: {
-    browser: true,
+    node: true,
     commonjs: true,
     es6: true
   },
@@ -14,6 +14,7 @@ module.exports = {
   },
   rules: {
     quotes: ["error", "double"],
-    semi: ["error", "always"]
+    semi: ["error", "always"],
+    "no-unused-vars": ["error", { argsIgnorePattern: "req|res|next|val" }]
   }
 };
