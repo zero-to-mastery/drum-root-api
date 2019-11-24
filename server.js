@@ -7,8 +7,7 @@ const ErrorResponse = require("./utils/errorResponse");
 const errorHandler = require("./middleware/error");
 
 // Route files
-const auth = require("./routes/auth");
-const drums = require("./routes/drums");
+const routes = require("./routes");
 
 process.on("uncaughtException", err => {
   // eslint-disable-next-line no-console
@@ -36,8 +35,7 @@ app.use(cors());
 app.use(express.json());
 
 // Mount routers
-app.use("/api/v1/auth", auth);
-app.use("/api/v1/drums", drums);
+app.use("/", routes);
 
 app.all("*", (req, res, next) => {
   next(new ErrorResponse(`Can't find ${req.originalUrl} on this server!`, 404));
