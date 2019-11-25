@@ -38,7 +38,7 @@ An Express REST API service for Creating and Sharing Drum Loops. See [Drum Root]
 
 ## Running Locally
 
-To get started, fork the repository and run the following commands:
+To get started, fork the repository, clone it and create a new file under name `config.env` in config folder, copy what's inside `config.example.env` file and then change the values as following the comments. Run the following commands:
 
     npm install
     npm run start
@@ -54,9 +54,3 @@ To access the PSQL shell through local (goto a new terminal)
     docker exec -it drum-root-api_postgres_1 bash
     root@------:/# su postgres
     $ psql
-    
-
-    
-
-
-    
