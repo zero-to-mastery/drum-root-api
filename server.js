@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
-const dotenv = require("dotenv");
+require("dotenv").config();
 
 const ErrorResponse = require("./utils/errorResponse");
 const errorHandler = require("./middleware/error");
@@ -17,9 +17,6 @@ process.on("uncaughtException", err => {
   // exit process
   process.exit(1);
 });
-
-// Load env vars
-dotenv.config({ path: "./config/config.env" });
 
 const app = express();
 
