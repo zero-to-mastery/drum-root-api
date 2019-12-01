@@ -10,12 +10,8 @@ exports.requireAuth = asyncHandler(async (req, res, next) => {
 
   if (authorization && authorization.startsWith("Bearer")) {
     // Set token from Bearer token in header
-    token = authorization.split(" ")[1];
-    // Set token from cookie
+    [, token] = authorization.split(" ");
   }
-  // else if (req.cookies.token) {
-  //   token = req.cookies.token;
-  // }
 
   // Make sure token exists
   if (!token) {
