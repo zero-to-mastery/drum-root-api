@@ -54,9 +54,3 @@ To access the PSQL shell through local (goto a new terminal)
     docker exec -it drum-root-api_postgres_1 bash
     root@------:/# su postgres
     $ psql
-    
-
-    
-
-
-    
