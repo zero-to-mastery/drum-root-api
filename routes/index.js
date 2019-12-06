@@ -10,7 +10,6 @@ const { requireAuth } = require("../middleware/auth");
 router.post("/signin", signin);
 router.post("/signout", signout);
 router.get("/drumlayout", requireAuth, getLayout);
-router.get("/uploadsound", uploadSound); //displays form to upload the sound
-router.post("/uploadsound", uploadSound); //posts the sound file
+router.post("/uploadsound", uploadSound); //posts a drum sound file
 
 module.exports = router;
