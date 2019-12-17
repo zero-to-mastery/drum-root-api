@@ -1,0 +1,11 @@
+BEGIN TRANSACTION;
+
+CREATE TABLE users
+(
+  userID INTEGER PRIMARY KEY,
+  firstName VARCHAR(45),
+  lastName VARCHAR(45),
+  emailID VARCHAR(45)
+);
+
+COMMIT;
