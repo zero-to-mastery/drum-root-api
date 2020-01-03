@@ -4,7 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "lint": "eslint .",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -31,10 +34,13 @@
     }
   },
   "devDependencies": {
-    "nodemon": "^2.0.1",
+    "@types/jest": "^24.0.25",
     "eslint": "^6.7.0",
+    "faker": "^4.1.0",
     "husky": "^3.1.0",
+    "jest": "^24.9.0",
     "lint-staged": "^9.4.3",
+    "nodemon": "^2.0.1",
     "prettier": "^1.19.1"
   },
   "keywords": [],
